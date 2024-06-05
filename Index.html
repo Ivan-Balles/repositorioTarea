@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen</title>
+    <style type="text/css">
+      header
+      {
+            background-color: blue;
+            padding: 10px;/*Esto controla el tamaño de el relleno lo hace mas grande o pequeño*/
+            text-align: center;
+      }
+    </style>
+</head>
+<body bgcolor="#9690CC">
+    <header>
+        <h1>
+            <i>
+                Examen 1er parcial
+            </i>
+        </h1>
+        <h2>
+            Desarrolla aplicaciones que se ejecutan en el cliente
+        </h2>
+        <h3>
+            Prof: Ixchel
+        </h3>
+        <h4>
+            Alberto Iván Ballersteros Hernández
+        </h4>
+        <a href="examen2Parcial.html">
+          <button>
+            2do examen
+          </button>
+        </a>
+        <img src="img/cblogo.png">
+    </header> 
+  <script type="text/javascript">
+    var boleto=60;
+     var dia=prompt("Ingrese el día de la semana");
+     switch(dia)
+     {
+        case "Lunes":
+            var suj=prompt("¿Es estudiante o maestro?   0)no 1)si")
+            if(suj!=1)
+            {
+                document.writeln("Lo lamentamos hoy es lunes no hay descuntos El precio de el boleto es: $"+boleto);
+            }
+            else
+            {
+                var desc=boleto-(boleto*0.50);
+                document.writeln("Hoy es lunes tenemos el 50% de descuento para ustedes El precio de el boleto es: $"+desc);
+            }
+            break;
+            case "Martes":
+               var suj=prompt("¿Es estudiante o maestro?   0)no 1)si")
+               if(suj!=1)
+                 {
+                   document.writeln("Lo lamentamos hoy martes no hay descuntos El precio de el boleto es: $"+boleto);
+                 }
+                else
+                 {
+                   var desc=boleto-(boleto*0.50);
+                   document.writeln("Hoy martes tenemos el 50% de descuento para ustedes El precio de el boleto es: $"+desc);
+                 }
+            break;
+            case "Miercoles":
+                   var desc=boleto-(boleto*0.50);
+                   document.writeln("Hoy miercoles tenemos el 50% de descuento para todos El precio de el boleto es: $"+desc);
+            break;
+            case "Jueves":
+               var suj=prompt("¿Tiene 60 años o mas?   0)no 1)si")
+               if(suj!=1)
+                 {
+                   document.writeln("Lo lamentamos jueves hoy no hay descuntos El precio de el boleto es: $"+boleto);
+                 }
+                else
+                 {
+                   var desc=boleto-(boleto*0.50);
+                   document.writeln("Hoy jueves tenemos el 50% de descuento para ustedes El precio de el boleto es: $"+desc);
+                 }
+            break;
+            case "Viernes":
+                document.writeln("Lo lamentamos viernes hoy no hay descuntos El precio de el boleto es: $"+boleto);
+            break;
+            case "Sabado":
+                document.writeln("Lo lamentamos hoy sabado no hay descuntos El precio de el boleto es: $"+boleto);
+            break;
+            case "Domingo":
+                document.writeln("Lo lamentamos hoy domingo no hay descuntos El precio de el boleto es: $"+boleto);
+            break;
+     }
+  </script> 
+  <footer>
+    <img src="img/Nlira.png">
+  </footer>  
+</body>
+</html>

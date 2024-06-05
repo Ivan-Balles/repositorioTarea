@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Seguridad pública</title>
+    <link rel="stylesheet" href="StylesEx2.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Seguridad pública y tránsito de la cdmx
+        </h1>
+        <a href="examen.html">
+            <button>
+              Inicio
+            </button>
+          </a>
+        <img src="img/mpMex.png">
+    </header>
+    <script type="text/javascript">
+        function control()
+        {
+            var cAma=0;
+            var cRos=0;
+            var cRoj=0;
+            var cVer=0;
+            var cAzu=0;
+            var j=0;
+            while(i!=0)
+            {
+                var placas=parseInt(prompt("Ingrese el ultimo digito de la placa de su carro"));
+                if(placas>=0 && placas<10)
+                {
+                    switch(placas)
+                    {
+                        case 1:
+                            alert("Su calcomania es de color amarillo");
+                            cAma++;
+                        break
+                        case 2:
+                            alert("Su calcomania es de color amarillo");
+                            cAma++;
+                        break
+                        case 3:
+                            alert("Su calcomania es de color rosa");
+                            cRos++;
+                        break
+                        case 4:
+                            alert("Su calcomania es de color rosa");
+                            cRos++;
+                        break
+                        case 5:
+                            alert("Su calcomania es de color roja");
+                            cRoj++;
+                        break
+                        case 6:
+                            alert("Su calcomania es de color roja");
+                            cRoj++;
+                        break
+                        case 7:
+                            alert("Su calcomania es de color verde");
+                            cVer++;
+                        break
+                        case 8:
+                            alert("Su calcomania es de color verde");
+                            cVer++;
+                        break
+                        case 0:
+                            alert("Su calcomania es de color azul");
+                            cAzu++;
+                        break
+                        case 9:
+                            alert("Su calcomania es de color azul");
+                            cAzu++;
+                        break
+                    }
+                }
+                else
+                {
+                    alert("Ingresaste mal tus placas");
+                    var  correction=parseInt(prompt("Esta vez ingrese de manera correcta sus placas por favor"));
+                    if(correction>=0 && correction<10)
+                    {
+                        switch(correction)
+                     {
+                        case 1:
+                            alert("Su calcomania es de color amarillo");
+                            cAma++;
+                        break
+                        case 2:
+                            alert("Su calcomania es de color amarillo");
+                            cAma++;
+                        break
+                        case 3:
+                            alert("Su calcomania es de color rosa");
+                            cRos++;
+                        break
+                        case 4:
+                            alert("Su calcomania es de color rosa");
+                            cRos++;
+                        break
+                        case 5:
+                            alert("Su calcomania es de color roja");
+                            cRoj++;
+                        break
+                        case 6:
+                            alert("Su calcomania es de color roja");
+                            cRoj++;
+                        break
+                        case 7:
+                            alert("Su calcomania es de color verde");
+                            cVer++;
+                        break
+                        case 8:
+                            alert("Su calcomania es de color verde");
+                            cVer++;
+                        break
+                        case 0:
+                            alert("Su calcomania es de color azul");
+                            cAzu++;
+                        break
+                        case 9:
+                            alert("Su calcomania es de color azul");
+                            cAzu++;
+                        break
+                     }
+                    }
+                    else
+                    {
+                        alert("Fue tu ultima oporyunidad :(");
+                    }
+                    
+                }
+                var i=parseInt(prompt("Hay más carros en la fila? 0)no 1)si"));
+                j++;
+            }
+
+            document.writeln("El numero total de carros fue " +j+"<br>");
+            document.writeln("El numero total de carros con calcomania amarilla fue " +cAma+"<br>");
+            document.writeln("El numero total de carros con calcomania rosa fue " +cRos+"<br>");
+            document.writeln("El numero total de carros con calcomania roja fue " +cRoj+"<br>");
+            document.writeln("El numero total de carros con calcomania verde fue " +cVer+"<br>");
+            document.writeln("El numero total de carros con calcomania azul fue " +cAzu+"<br>");
+        }
+        control();
+    </script>
+    <footer>
+        <h6>
+            El gobierno no se hace responsable <br>
+            de ninguna falla en el sistema <br>
+            de esta manera se deslinda de <br>
+            cualquier demanda y se la hereda <br>
+            al programador
+        </h6>
+    </footer>
+</body>
+</html>
